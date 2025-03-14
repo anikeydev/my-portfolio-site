@@ -6,6 +6,7 @@
     margin-bottom: 2rem
     &__container
         display: flex
+        align-items: center
         justify-content: space-between
     &__content
         width: 60%
@@ -13,13 +14,12 @@
     &__title
         margin-bottom: 2rem
         & h1
+            margin-bottom: .5rem
             font-size: 32px
             font-weight: 600
         & p
-            position: relative
-            top: 1rem
-            right: 5rem
-            z-index: 1
+            text-align: center
+            margin-left: 1rem
             font-size: 20px
     &__subtitle
         color: #0D1B2A
@@ -31,5 +31,6 @@
 .avatar
     text-align: center
     &__img
-        width: 50%
+        width: 60%
         border-radius: 80px
+        box-shadow: 0px 3px 10px 1px rgba(45, 49, 66, 0.25)

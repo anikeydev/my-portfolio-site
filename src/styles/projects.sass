@@ -1,14 +1,16 @@
 .projects
     padding: 1rem 1rem
     background: #fbc2ab
-    // border-bottom: 2px solid #EF8354
+    border-radius: 5px
+    box-shadow: 0px 3px 10px 1px rgba(45, 49, 66, 0.25)
     &__list
         display: flex
         gap: 1rem
     &__item
         padding: 1rem
         background: #fff
-        border-radius: 10p
+        border-radius: 10px
+        box-shadow: 0px 3px 10px 1px rgba(45, 49, 66, 0.25)
     &__img
         border: 1px solid #000
         margin-bottom: 1rem
@@ -21,10 +23,18 @@
         border-bottom: 1px solid #2D3142
     &__description
         padding: 1rem 1rem
-        margin-bottom: .5rem
+        margin-bottom: 1.5rem
         color: #4F5D75
     &__link
+        display: block
+        width: 60%
+        text-align: center
+        font-weight: 600
         color: #2D3142
-        padding-bottom: 5px
+        padding: .5rem
+        background: #EF8354
+        border-radius: 15px
+        transition: all ease .2s
+        box-shadow: 0px 3px 10px 1px rgba(45, 49, 66, 0.25)
         &:hover
-            border-bottom: 1px solid #2D3142
+            background: #fbc2ab
