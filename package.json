@@ -1,6 +1,6 @@
 {
   "version": "1.0.1",
-  "description": "My webpack project",
+  "description": "My site",
   "name": "my-vc-site",
   "scripts": {
     "build": "webpack --mode=production --node-env=production",
