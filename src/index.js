@@ -45,7 +45,7 @@ const projects = [
         text: 'Node JS, node-telegram-bot-api, express.js, Api',
       },
     ],
-    link: null,
+    link: 'https://t.me/EnergyStationsMSK_bot',
     linkGH: 'https://github.com/anikeydev/searchEnergy-teleram-bot',
   },
   {
@@ -98,7 +98,7 @@ const liItems = projects
                   class="projects__link"
                   href=${item.link}
                   target="_blank"
-              >Web...</a>`
+              >Watch...</a>`
                   : ''
               }
               <a
