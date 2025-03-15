@@ -29,29 +29,29 @@ const projects = [
   },
   {
     imgPath: searchEnergyTelegramBot,
-    imgAlt: 'react finance app',
-    name: 'React Finance App',
+    imgAlt: 'search energy telegram bot',
+    name: 'SearchEnergy Telegram Bot',
     description: [
       {
         title: 'Описание:',
-        text: 'Просто pet проект для ведения личных финансов и капитала',
+        text: 'Простой телеграм бот для поиска ближайщих зарядных станций электромобилей в Москве',
       },
       {
         title: 'Задача:',
-        text: 'Вести учет всех транзакций, вести капитал, сортировать по категориям, вести аналитику',
+        text: 'Помочь пользователю быстро найти зарядку электромобиля в Москве, используя актуальные данные',
       },
       {
         title: 'Технологии:',
-        text: 'JS, React, HTML, CSS, Vite',
+        text: 'Node JS, node-telegram-bot-api, express.js, Api',
       },
     ],
-    link: 'https://react-finance-app.onrender.com/',
-    linkGH: 'https://github.com/anikeydev/react-finance-app',
+    link: null,
+    linkGH: 'https://github.com/anikeydev/searchEnergy-teleram-bot',
   },
   {
     imgPath: avatar,
-    imgAlt: 'react finance app',
-    name: 'React Finance App',
+    imgAlt: 'rest api',
+    name: 'REST API',
     description: [
       {
         title: 'Описание:',
@@ -75,8 +75,9 @@ const $projects = document.getElementById('projects')
 const $list = document.createElement('ul')
 $list.classList.add('projects__list')
 
-const liItems = projects.map((item) => {
-  return `<li class="projects__item">
+const liItems = projects
+  .map((item) => {
+    return `<li class="projects__item">
             <img
               class="projects__img"
               src=${item.imgPath}
@@ -91,11 +92,15 @@ const liItems = projects.map((item) => {
                   .join(' ')}
             </div>
             <div class="projects__buttons">
-              <a
+              ${
+                item.link
+                  ? `<a
                   class="projects__link"
                   href=${item.link}
                   target="_blank"
-              >Web...</a>
+              >Web...</a>`
+                  : ''
+              }
               <a
                   class="projects__link"
                   href=${item.linkGH}
@@ -103,14 +108,8 @@ const liItems = projects.map((item) => {
               >GitHub...</a>
             </div>
         </li>   `
-})
+  })
+  .join(' ')
 
 $list.insertAdjacentHTML('beforeend', liItems.toString())
 $projects.appendChild($list)
-
-{
-  /* <img
-class="projects__img"
-src=${item.imgPath}
-alt=${item.imgAlt} /> */
-}
