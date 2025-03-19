@@ -3,7 +3,7 @@ import './styles/reset.css'
 
 import reactFinanceAppImg from './assets/financeapp.png'
 import searchEnergyTelegramBot from './assets/searchEnergyTelegramBot.jpg'
-import avatar from './assets/avatar.jpg'
+import inWork from './assets/inWork.png'
 
 const projects = [
   {
@@ -45,29 +45,29 @@ const projects = [
         text: 'Node JS, node-telegram-bot-api, express.js, Api',
       },
     ],
-    link: null,
+    link: 'https://t.me/EnergyStationsMSK_bot',
     linkGH: 'https://github.com/anikeydev/searchEnergy-teleram-bot',
   },
   {
-    imgPath: avatar,
+    imgPath: inWork,
     imgAlt: 'rest api',
     name: 'REST API',
     description: [
       {
         title: 'Описание:',
-        text: 'Просто pet проект для ведения личных финансов и капитала',
+        text: '',
       },
       {
         title: 'Задача:',
-        text: 'Вести учет всех транзакций, вести капитал, сортировать по категориям, вести аналитику',
+        text: '',
       },
       {
         title: 'Технологии:',
-        text: 'JS, React, HTML, CSS, Vite',
+        text: '',
       },
     ],
-    link: 'https://react-finance-app.onrender.com/',
-    linkGH: 'https://github.com/anikeydev/react-finance-app',
+    link: null,
+    linkGH: null,
   },
 ]
 
@@ -98,14 +98,18 @@ const liItems = projects
                   class="projects__link"
                   href=${item.link}
                   target="_blank"
-              >Web...</a>`
+              >Watch...</a>`
                   : ''
               }
-              <a
+              ${
+                item.linkGH
+                  ? `<a
                   class="projects__link"
                   href=${item.linkGH}
                   target="_blank"
-              >GitHub...</a>
+              >GitHub...</a>`
+                  : ''
+              }
             </div>
         </li>   `
   })
