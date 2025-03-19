@@ -3,6 +3,7 @@ import './styles/reset.css'
 
 import reactFinanceAppImg from './assets/financeapp.png'
 import searchEnergyTelegramBot from './assets/searchEnergyTelegramBot.jpg'
+import reactSeminarsAppImg from './assets/preview.png'
 import inWork from './assets/inWork.png'
 
 const projects = [
@@ -49,25 +50,25 @@ const projects = [
     linkGH: 'https://github.com/anikeydev/searchEnergy-teleram-bot',
   },
   {
-    imgPath: inWork,
-    imgAlt: 'rest api',
-    name: 'REST API',
+    imgPath: reactSeminarsAppImg,
+    imgAlt: 'react seminars app',
+    name: 'React Seminars App',
     description: [
       {
-        title: 'Описание:',
-        text: '',
+        title: 'Описание: ',
+        text: 'Простой проект, который показывает мои навыки рыботы с React и Node.js',
       },
       {
         title: 'Задача:',
-        text: '',
+        text: `Запрос данных с сервера; Вывод списка семинаров на главной странице; Создание нового семинара; Удаление семинара; Редактирование семинара`,
       },
       {
         title: 'Технологии:',
-        text: '',
+        text: 'Node.js, Express.js, React, react-hook-form, axios, bootstrap, vite',
       },
     ],
     link: null,
-    linkGH: null,
+    linkGH: 'https://github.com/anikeydev/react-seminars-app',
   },
 ]
 
