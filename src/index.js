@@ -21,7 +21,7 @@ const projects = [
       },
       {
         title: 'Технологии:',
-        text: 'JS, React, HTML, CSS, Vite',
+        text: 'JS, React, HTML, Sass, Vite',
       },
     ],
     link: 'https://react-finance-app.onrender.com/',
