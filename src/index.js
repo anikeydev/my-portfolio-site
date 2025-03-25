@@ -46,7 +46,7 @@ const projects = [
         text: 'Node JS, node-telegram-bot-api, express.js, Api',
       },
     ],
-    link: 'https://t.me/EnergyStationsMSK_bot',
+    link: '', //https://t.me/EnergyStationsMSK_bot
     linkGH: 'https://github.com/anikeydev/searchEnergy-teleram-bot',
   },
   {
