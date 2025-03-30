@@ -4,9 +4,30 @@ import './styles/reset.css'
 import reactFinanceAppImg from './assets/financeapp.png'
 import searchEnergyTelegramBot from './assets/searchEnergyTelegramBot.jpg'
 import reactSeminarsAppImg from './assets/preview.png'
-import inWork from './assets/inWork.png'
+import lifebalance from './assets/lifebalance.png'
 
 const projects = [
+  {
+    imgPath: lifebalance,
+    imgAlt: 'lifebalance',
+    name: 'Life Balance Test',
+    description: [
+      {
+        title: 'Описание:',
+        text: 'Life Balance Test — это современный веб-сервис, который поможет вам оценить баланс вашей жизни с помощью методики "Колесо Баланса" и получить наглядный график своих результатов.',
+      },
+      {
+        title: 'Задача:',
+        text: 'Помочь людям в жизни, а именно в тайм-менеджменте',
+      },
+      {
+        title: 'Технологии:',
+        text: 'Frontend: react, react toollkit, rtk query, bootstrap, vite. Backend: node js, express, sequelize, postgresql',
+      },
+    ],
+    link: 'https://life-balance-test.ru/',
+    linkGH: 'https://github.com/anikeydev/life-wheel-app',
+  },
   {
     imgPath: reactFinanceAppImg,
     imgAlt: 'react finance app',
